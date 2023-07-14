@@ -41,6 +41,7 @@ body {
   background-color: #008101;
 
   box-shadow: 0px 0px 5px 5px #008101;
+  position: relative;
 }
 .grey-section {
   width: 100%;
@@ -67,4 +68,33 @@ body {
   height: 1.8rem;
   background-color: white;
   cursor: pointer;
+}
+
+.redMario {
+  position: absolute;
+  top: 26rem;
+  animation: moveRight 5s ease-in-out infinite;
+  overflow: hidden;
+}
+.greenMario {
+  position: absolute;
+  top: 29rem;
+  animation: moveRightGreen 8s ease-in-out infinite;
+  overflow: hidden;
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes moveRightGreen {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
 }
