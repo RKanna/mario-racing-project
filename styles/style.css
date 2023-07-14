@@ -90,14 +90,14 @@ body {
 .greenMario {
   position: absolute;
   top: 29rem;
-  animation: moveRight 6s ease-in-out infinite;
+  animation: moveRight 5.3s ease-in-out infinite;
   overflow: hidden;
 }
 @keyframes moveRight {
   from {
-    transform: translateX(-200px);
+    transform: translateX(-12.5rem);
   }
   to {
-    transform: translateX(1600px);
+    transform: translateX(100rem);
   }
 }
