@@ -101,3 +101,24 @@ body {
     transform: translateX(100rem);
   }
 }
+.moving-cloud {
+  position: absolute;
+  top: 2rem;
+  animation: moveRight 45s linear infinite;
+  overflow: hidden;
+}
+@keyframes decrease-opacity {
+  0% {
+    opacity: 40%;
+  }
+  100% {
+    opacity: 40%;
+  }
+}
+.moving-cloud-two {
+  position: absolute;
+  top: -0.5rem;
+  left: 6rem;
+  animation: moveRight 37s linear infinite, decrease-opacity linear forwards;
+  overflow: hidden;
+}
