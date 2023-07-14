@@ -23,6 +23,7 @@ body {
   justify-content: center;
   flex-direction: column;
   /* align-items: center; */
+  overflow: hidden;
 }
 .flex-class {
   display: flex;
@@ -69,32 +70,34 @@ body {
   background-color: white;
   cursor: pointer;
 }
-
+@keyframes jump {
+  0% {
+    top: 26rem;
+  }
+  40% {
+    top: 20rem;
+  }
+  100% {
+    top: 26rem;
+  }
+}
 .redMario {
   position: absolute;
   top: 26rem;
-  animation: moveRight 5s ease-in-out infinite;
+  animation: moveRight 5s ease-in-out infinite, jump 0.5s 2s;
   overflow: hidden;
 }
 .greenMario {
   position: absolute;
   top: 29rem;
-  animation: moveRightGreen 8s ease-in-out infinite;
+  animation: moveRight 6s ease-in-out infinite;
   overflow: hidden;
 }
 @keyframes moveRight {
-  0% {
-    transform: translateX(0);
+  from {
+    transform: translateX(-200px);
   }
-  100% {
-    transform: translateX(100vw);
-  }
-}
-@keyframes moveRightGreen {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100vw);
+  to {
+    transform: translateX(1600px);
   }
 }
