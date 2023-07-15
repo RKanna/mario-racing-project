@@ -119,6 +119,7 @@ body {
   position: absolute;
   top: -0.5rem;
   left: 6rem;
-  animation: moveRight 37s linear infinite, decrease-opacity linear forwards;
+  animation: moveRight 37s linear infinite,
+    decrease-opacity linear forwards infinite;
   overflow: hidden;
 }
